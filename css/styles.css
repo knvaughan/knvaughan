@@ -146,11 +146,15 @@ img {
     text-align: center;
 }
 
+.lines{
+    position: relative;
+}
+
 .lines::after {
     position: absolute;
     top:2rem;
     left:10px;
-    width:26%;
+    width:13%;
     height: 0.25rem;
     background-color: #18373A;
     content: "";
@@ -160,12 +164,11 @@ img {
     position: absolute;
     top:2rem;
     right:10px;
-    width:26%;
+    width:13%;
     height: 0.25rem;
     background-color: #18373A;
     content: "";
 }
-
 
 .contactinfo {
     position: relative;
@@ -189,7 +192,7 @@ form {
     margin: 2rem;
     display: flex;
     flex-direction: column;
-    padding: 2rem;
+    padding: 1rem;
     border-style: solid none;   /*maybe keep this ----LOOK AT MEEEEEEE----------*/
 }
 
@@ -290,7 +293,6 @@ footer {
 
 .aboutimg {
     width:80%;
-
 }
 
 .aboutinfo {
@@ -319,6 +321,7 @@ footer {
 .servinfo {
     display: flex;
     flex-direction: column;
+    margin: 1.5rem 2rem;
 }
 
 
@@ -332,7 +335,8 @@ footer {
     display: flex;
     flex-direction: column;
     display: inline-block;
-    padding: 1rem 4rem;
+    padding: 1rem 3rem;
+    padding-left: 4rem;
 }
 
 .paymenttext {
@@ -340,9 +344,47 @@ footer {
     flex-direction: column;
 }
 
+
+
+@media screen and ( min-width:450px) {
+    .servinfo {
+        margin: 1.5rem 3rem;
+    }
+
+    .lines::after {
+        left: 20px;
+        width:20%;
+    }
+
+    .lines::before {
+        right:20px;
+        width:20%;
+    }
+}
+
+
+@media screen and ( min-width:600px) {
+    
+    .lines::after {
+        left: 30px;
+        width:25%;
+    }
+
+    .lines::before {
+        right:30px;
+        width:25%;
+    }
+}
+
+
+
 @media screen and (min-width: 800px) {
     .navlink {
         font-size: 1.4rem;    /*REMINDER: Increase font size as screen gets bigger*/
+    }
+
+    form {
+        padding:2rem;
     }
 
     .aboutinfo {
@@ -350,8 +392,34 @@ footer {
     }
 
     .lines::after {
-        left: 20px; 
+        left: 45px;
+        width:30%;
     }
+
+    .lines::before {
+        right:45px;
+        width:30%;
+    }
+/*
+    .lines::after {
+        position: absolute;
+        top:2rem;
+        left:10px;
+        width:26%;
+        height: 0.25rem;
+        background-color: #18373A;
+        content: "";
+    }
+    
+    .lines::before {
+        position: absolute;
+        top:2rem;
+        right:10px;
+        width:26%;
+        height: 0.25rem;
+        background-color: #18373A;
+        content: "";
+    }*/
     
 
 }
