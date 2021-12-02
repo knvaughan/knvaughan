@@ -256,12 +256,15 @@ button:hover, button:focus {
 }
 
 
+
 footer {
     background-color: #B7DFE1;
     padding: 2rem;
     margin: 1rem 0;
     display: flex;
+    flex-direction: row;
     align-items: center;
+    justify-content: flex-start;
 }
 
 .footerlogo {
@@ -270,7 +273,6 @@ footer {
     max-width: 205px;
     min-width: 50px;
 }
-
 
 /*
 .footerlogo::after {
@@ -379,10 +381,7 @@ footer {
 
 
 @media screen and (min-width: 800px) {
-    .navlink {
-        font-size: 1.4rem;    /*REMINDER: Increase font size as screen gets bigger*/
-    }
-
+    
     form {
         padding:2rem;
     }
@@ -400,26 +399,6 @@ footer {
         right:45px;
         width:30%;
     }
-/*
-    .lines::after {
-        position: absolute;
-        top:2rem;
-        left:10px;
-        width:26%;
-        height: 0.25rem;
-        background-color: #18373A;
-        content: "";
-    }
-    
-    .lines::before {
-        position: absolute;
-        top:2rem;
-        right:10px;
-        width:26%;
-        height: 0.25rem;
-        background-color: #18373A;
-        content: "";
-    }*/
-    
+
 
 }
