@@ -81,6 +81,7 @@ nav {
 ul {    
     display: flex;
     justify-content: space-around;
+
 }
 
 .navbtn {
@@ -263,27 +264,45 @@ footer {
     margin: 1rem 0;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: flex-start;
 }
 
+
 .footerlogo {
+    position: relative;
     width: 50%;
     display: block;
     max-width: 205px;
     min-width: 50px;
+    flex:1 0 0;
+    padding: 0 1rem;
 }
 
-/*
+.footertext {
+    flex: 1 0 0;
+}
+
+.emaillink {
+    word-break:break-all;
+}
+
+.credit {
+    flex: 2 0 100%;
+    padding-top: 1rem;
+}
+
+
 .footerlogo::after {
     position: absolute;
-    top:1px;
-    left:1px;
-    width:55px;
-    height: 55px;
+    top:15px;
+    right:-3px;
+    width:2%;
+    height: 80%;
     background-color: #18373A;
     content:""; 
-} */
+}
 
 
 /*about page css*/
@@ -353,6 +372,16 @@ footer {
         margin: 1.5rem 3rem;
     }
 
+    .footertext {
+        padding: 0 2rem;
+    }
+
+    .footerlogo::after {
+        right:-10px;
+        
+    }
+
+
     .lines::after {
         left: 20px;
         width:20%;
@@ -375,6 +404,11 @@ footer {
     .lines::before {
         right:30px;
         width:25%;
+    }
+
+    footer {
+    align-content: center;
+    justify-content: center;
     }
 }
 
@@ -399,6 +433,4 @@ footer {
         right:45px;
         width:30%;
     }
-
-
 }
