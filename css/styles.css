@@ -97,7 +97,7 @@ ul {
     font-family: nunito;
     color:white;
     font-size: 1.2rem;
-    padding: 1rem;
+    padding: 0.5rem;
     transition: text-decoration-color 300ms ease-in-out;
 }
 
@@ -182,10 +182,6 @@ img {
     padding:0.3rem;
 }
 
-.contactfooter {
-    width:100%;
-}
-
 form {
     border-radius: 10px;
     font-family: 'bodoni moda','Times New Roman', Times, serif;
@@ -257,7 +253,6 @@ button:hover, button:focus {
 }
 
 
-
 footer {
     background-color: #B7DFE1;
     padding: 2rem;
@@ -267,6 +262,7 @@ footer {
     flex-wrap: wrap;
     align-items: center;
     justify-content: flex-start;
+    width: 100%;
 }
 
 
@@ -310,6 +306,7 @@ footer {
 .aboutcont {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .aboutimg {
@@ -322,6 +319,7 @@ footer {
     justify-content: center;
     align-items: center;
     margin: 1.5rem 3rem; 
+    max-width: 1000px;
 }
 
 /*services stylings*/ 
@@ -424,13 +422,24 @@ footer {
         flex-direction: row;
     }
 
+    .aboutimg {
+        min-width: 240px;
+        max-width: 350px;
+        padding-right: 1rem;
+    }
+
+    .abouttext {
+        max-width: 600px;
+    }
+
+    
     .lines::after {
         left: 45px;
-        width:30%;
+        width:29%;
     }
 
     .lines::before {
         right:45px;
-        width:30%;
+        width:29%;
     }
 }
