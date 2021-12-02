@@ -64,6 +64,7 @@ header {
     width: 25%;
     margin:1rem;
     cursor: pointer;
+    max-width: 170px;
 }
 
 nav {
@@ -128,10 +129,6 @@ img {
     width: 100%;
 }
 
-.footerlogo {
-    width: 75%;
-    display: block;
-}
 
 .credit {
     font-style: italic;
@@ -264,6 +261,15 @@ footer {
     align-items: center;
 }
 
+.footerlogo {
+    width: 50%;
+    display: block;
+    max-width: 205px;
+    min-width: 50px;
+}
+
+
+/*
 .footerlogo::after {
     position: absolute;
     top:1px;
@@ -272,7 +278,7 @@ footer {
     height: 55px;
     background-color: #18373A;
     content:""; 
-} 
+} */
 
 
 /*about page css*/
