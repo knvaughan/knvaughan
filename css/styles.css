@@ -8,11 +8,11 @@
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'bodoni moda';
+    font-family: 'bodoni moda', 'Times New Roman', Times, serif;
 }
 
 p, article {
-    font-family: nunito;
+    font-family: 'nunito', Verdana, sans-serif;
     line-height: 1.4rem;
 }
 
@@ -53,9 +53,10 @@ header {
 
 .mainlogo {
     display: block;
-    width: 75%;
+    width: 50%;
     margin: 3rem;
     cursor: pointer;
+    max-width: 315px;
 }
 
 .pagelogo {
@@ -151,7 +152,7 @@ img {
 .lines::after {
     position: absolute;
     top:2rem;
-    left:30px;
+    left:10px;
     width:26%;
     height: 0.25rem;
     background-color: #18373A;
@@ -161,7 +162,7 @@ img {
 .lines::before {
     position: absolute;
     top:2rem;
-    right:30px;
+    right:10px;
     width:26%;
     height: 0.25rem;
     background-color: #18373A;
@@ -186,10 +187,13 @@ img {
 
 form {
     border-radius: 10px;
+    font-family: 'bodoni moda','Times New Roman', Times, serif;
     background-color: #D8C5C8;
     margin: 2rem;
     display: flex;
     flex-direction: column;
+    padding: 2rem;
+    border-style: solid none;   /*maybe keep this ----LOOK AT MEEEEEEE----------*/
 }
 
 legend {
@@ -205,8 +209,8 @@ label {
 }
 
 input {
-    margin: 1rem;
     padding: 0.35rem 0;
+    margin: 1rem 0;
     border-radius: 5px;
     width: 100%;
     border: 2.2px solid transparent;
@@ -219,25 +223,27 @@ input:focus, textarea:focus {
 
 fieldset {
     border: none;
+    width:100%;
 }
 textarea {
     border-radius: 5px;
     width: 100%;
-    margin:1rem;
+    margin:1rem 0;
     padding:0.5rem;
     height: 15vh;
     border: 2.2px solid transparent;
     outline: none;
+    font-family: "bodoni moda";
 }
 
 button {
-    font-family: 'bodoni moda';
+    font-family: 'bodoni moda','Times New Roman', Times, serif;
     font-size: 1.5rem;
     width: 100%;
     border: none;
     padding: 0.5rem;
     border-radius: 5px;
-    margin: 1rem;
+    margin: 1rem 0;
     background-color:#8A3343;
     color: whitesmoke;
     box-shadow: 1px 2px 3px rgba(26, 26, 26, 0.295);
@@ -266,7 +272,7 @@ footer {
     height: 55px;
     background-color: #18373A;
     content:""; 
-} /*WHY IS THIS NOT WORKING BUT THE CONTACT PAGE ONE IS??*/
+} 
 
 
 /*about page css*/
@@ -307,9 +313,14 @@ footer {
 .servinfo {
     display: flex;
     flex-direction: column;
-    margin: 1.5rem 3rem;
 }
 
+
+.test {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
 
 .infolist {
     display: flex;
@@ -330,6 +341,10 @@ footer {
 
     .aboutinfo {
         flex-direction: row;
+    }
+
+    .lines::after {
+        left: 20px; 
     }
     
 
